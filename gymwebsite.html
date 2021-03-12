@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Nupur's Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-image: url('https://wallpapercave.com/wp/wp3173158.jpg');
+        margin:0px;
+        padding:0px;
+        background-size:cover;
+       /* height: 3500px;*/
+       font-size:15px;
+       font-family: 'Baloo Bhai 2', cursive;
+    }
+    header{
+        color:white;
+    }
+    .left{
+        
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top:0px;
+        line-height: 20px;
+        font-size: 17px;
+    }
+    .mid{
+       
+        display: block;
+       /* top : 12px;
+        right : 13px;*/
+        width: 38%;
+       margin : 20px auto;
+
+    }
+    .right{
+        position: absolute;
+        top : 20px;
+        right: 34px;
+     
+        display:inline-block;    
+      
+    }
+     .navbar{
+         display: inline-block;
+     }
+    .navbar li{
+        display : inline-block;
+       font-size: 15px;
+    }
+
+    .navbar li a{
+        color : white;
+        text-decoration : none;
+        padding : 34px 23px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color : grey;
+    } 
+    .left img{
+        width:133px;
+    }
+    .left div{
+        text-align:centre;
+    }
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: transparent;
+        padding : 5px 14px;
+        border : 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .btn:hover{
+        background-color: honeydew;
+        color :black;
+    }
+    .container{
+    
+        width: 40%;
+        color :white;
+        margin:100px 420px;
+        padding: 75px 70px;
+        border-radius: 6px;
+         position: relative;
+         /*left:420px;
+         top:100px;
+         right:auto;*/
+    }
+    .formgroup input{
+        margin:12px;
+        display:block;
+        text-align : center;
+        border-radius: 5px;
+        font-size:15px;
+        width:130px;
+        padding:2px,2px;
+        font-family:  'Baloo Bhai 2', cursive;
+
+    } 
+    .container h1{
+              text-align : center
+    }
+    .container button{
+        text-align : center;
+        display:block;
+        margin: auto;
+        width:90%;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+           <img src="images/gym-logo.jpg" alt="">
+           <div>Nupur's Fitness</div>
+        
+        </div>
+        <!--mid box for  navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active ">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+         <!--right box for buttons-->
+        <div class="right">
+                 <button class="btn">
+                   call us now
+                 </button>
+                 <button class="btn">
+                 email us now
+                 </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of Delhi Now</h1>
+        <form action="noaction.php" >
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit Now</button>
+        </form>
+    </div>
+</body>
+</html>
